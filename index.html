@@ -13,8 +13,8 @@
     </head>
     <body>
         <main>
-            <section class="newsletter">
-                <form class="newsletter__form" novalidate>
+            <form class="newsletter__form hidden" novalidate>
+                <div class="newsletter">
                     <div class="newsletter__illustration-container">
                         <picture>
                             <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 48em)" />
@@ -32,17 +32,18 @@
                         </ul>
                         <div class="newsletter__email">
                             <label for="email">Email address</label>
+                            <p class="newsletter__email-validation-text"></p>
                             <input id="email" type="email" placeholder="email@company.com" class="newsletter__email-input" />
                         </div>
                         <button type="submit" class="btn newsletter__submit-btn">Subscribe to monthly newsletter</button>
                     </div>
-                </form>
-            </section>
+                </div>
+            </form>
 
-            <div class="success-message hidden">
-                <img src="assets/images/icon-success.svg" alt="Success Illustration" class="success-message_icon" />
+            <div class="success-message">
+                <img src="assets/images/icon-success.svg" alt="Success Illustration" class="success-message__icon" />
                 <h2 class="success-message__title">Thanks for subscribing!</h2>
-                <p class="success-message__text"></p>
+                <p class="success-message__text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
                 <a href="#" class="btn">Dismiss message</a>
             </div>
         </main>
