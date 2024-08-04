@@ -61,7 +61,6 @@ h6 {
 }
 
 .btn {
-    /* background-color: var(--color-dark-slate-grey); */
     color: var(--color-white);
     padding: 1.6rem 2rem;
     display: block;
@@ -71,6 +70,8 @@ h6 {
     width: 100%;
     background: var(--color-dark-slate-grey);
     font-weight: 700;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -80,7 +81,6 @@ h6 {
 .newsletter {
     min-height: 100vh;
     max-width: 90rem;
-    /* max-width: 37.5rem; */
     display: flex;
     flex-direction: column;
 }
@@ -97,23 +97,18 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
 }
 
-.newsletter__title {
+.primary-heading {
     font-size: 4rem;
+    line-height: 1;
     color: var(--color-dark-slate-grey);
-    margin-bottom: 1.6rem;
-}
-
-.newsletter__text {
-    margin-bottom: 2rem;
 }
 
 .newsletter__list {
     list-style-image: url('assets/images/icon-list.svg');
     list-style-position: inside;
-
-    margin-bottom: 3rem;
 }
 
 .newsletter__email {
@@ -163,19 +158,22 @@ h6 {
 
 .success-message {
     height: 100vh;
+    padding: 5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.success-message div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    padding: 5rem 2rem;
+    gap: 3rem;
+    flex-grow: 1;
 }
 
 .success-message__icon {
-    width: 5rem;
-}
-
-.success-message .btn {
-    margin-top: auto;
+    width: 6rem;
 }
 
 .hidden {

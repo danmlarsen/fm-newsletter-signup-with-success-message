@@ -13,7 +13,7 @@
     </head>
     <body>
         <main>
-            <form class="newsletter__form hidden" novalidate>
+            <form class="newsletter__form" novalidate>
                 <div class="newsletter">
                     <div class="newsletter__illustration-container">
                         <picture>
@@ -23,7 +23,7 @@
                         </picture>
                     </div>
                     <div class="newsletter__content">
-                        <h1 class="newsletter__title">Stay updated!</h1>
+                        <h1 class="primary-heading">Stay updated!</h1>
                         <p class="newsletter__text">Join 60,000+ product managers receiving monthly updates on:</p>
                         <ul class="newsletter__list">
                             <li class="newsletter__list-item">Product discovery and building what matters</li>
@@ -40,10 +40,12 @@
                 </div>
             </form>
 
-            <div class="success-message">
-                <img src="assets/images/icon-success.svg" alt="Success Illustration" class="success-message__icon" />
-                <h2 class="success-message__title">Thanks for subscribing!</h2>
-                <p class="success-message__text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+            <div class="success-message hidden">
+                <div>
+                    <img src="assets/images/icon-success.svg" alt="Success Illustration" class="success-message__icon" />
+                    <h2 class="primary-heading">Thanks for subscribing!</h2>
+                    <p class="success-message__text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+                </div>
                 <a href="#" class="btn">Dismiss message</a>
             </div>
         </main>
