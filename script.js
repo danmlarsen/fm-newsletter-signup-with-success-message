@@ -1,11 +1,10 @@
-const mainEl = document.querySelector('main');
 const newsletterFormEl = document.querySelector('.newsletter__form');
-const emailEl = document.querySelector('.newsletter__email');
-const emailInputEl = document.querySelector('.newsletter__email-input');
-const emailValidationTextEl = document.querySelector('.newsletter__email-validation-text');
+const emailEl = newsletterFormEl.querySelector('.newsletter__email');
+const emailInputEl = emailEl.querySelector('.newsletter__email-input');
+const emailValidationTextEl = emailEl.querySelector('.newsletter__email-validation-text');
 const successMessageEl = document.querySelector('.success-message');
 const successMessageTextEl = successMessageEl.querySelector('.success-message__text');
-const dismissBtn = document.querySelector('.success-message__dismiss-btn');
+const dismissBtn = successMessageEl.querySelector('.success-message__dismiss-btn');
 
 const emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const invalidEmailText = 'Valid email required';
