@@ -1,7 +1,7 @@
 :root {
     --color-tomato: #ff6257;
     --color-tomato-light: #ffe8e6;
-    --color-orange: #fe6942;
+    --color-red: #fe527b;
     --color-green: #008000;
     --color-green-light: rgba(60, 184, 60, 0.25);
     --color-dark-slate-grey: #242742;
@@ -85,7 +85,8 @@ h6 {
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background: linear-gradient(135deg, var(--color-tomato), var(--color-orange));
+    background: linear-gradient(to right, var(--color-tomato), var(--color-red));
+    box-shadow: var(--color-red) 0px 4px 20px;
 }
 
 .newsletter {
